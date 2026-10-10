@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Titanium Tea | Jaggery Tea Premix</title>
+  <meta name="description" content="The Titanium Tea — Jaggery Tea Premix. Traditional taste with modern convenience.">
+  <style>
+    :root{
+      --brown:#3a1d0b; --deep:#123c26; --green:#1f6b36;
+      --gold:#c98b25; --cream:#fbf3df; --white:#fffdf8; --text:#24180f;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Georgia,serif;background:var(--cream);color:var(--text);line-height:1.5}
+    a{text-decoration:none;color:inherit}
+    .top{background:var(--brown);color:#fff;padding:8px 5%;display:flex;justify-content:space-between;font:13px Arial}
+    header{background:var(--white);padding:16px 5%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px #0001}
+    .logo{font-weight:900;line-height:.82;text-align:center;letter-spacing:1px}
+    .logo small{display:block;font:700 12px Arial;letter-spacing:3px}
+    .logo b{font-size:29px}.logo span{font-size:20px;color:var(--green);letter-spacing:4px}
+    nav{display:flex;gap:28px;font:600 15px Arial} nav a:hover{color:var(--green)}
+    .btn{background:var(--brown);color:#fff;padding:13px 23px;border-radius:30px;font:700 14px Arial;display:inline-block}
+    .hero{min-height:520px;padding:70px 6%;display:flex;align-items:center;justify-content:space-between;
+      background:linear-gradient(90deg,#f7e8c5 0%,#f7e8c5dd 43%,#f7e8c522),url("https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=1800&q=85") center/cover}
+    .hero-copy{max-width:620px}.hero h1{font-size:clamp(48px,6vw,82px);line-height:.98;color:var(--deep)}
+    .hero h2{margin:15px 0;font:800 23px Arial;letter-spacing:5px}
+    .hero p{font:18px Arial;margin:18px 0 25px}
+    .icons{display:flex;gap:25px;margin:25px 0;flex-wrap:wrap}.icon{text-align:center;font:13px Arial;min-width:90px}
+    .icon i{display:grid;place-items:center;border:2px solid var(--deep);border-radius:50%;width:50px;height:50px;margin:auto auto 7px;font-style:normal;font-size:23px}
+    .strip{background:var(--deep);color:#fff;padding:17px 6%;display:flex;justify-content:space-around;gap:15px;flex-wrap:wrap;font:600 14px Arial}
+    section{padding:65px 6%}.title{text-align:center;font-size:38px;margin-bottom:35px}.title small{display:block;color:var(--green);font:700 13px Arial;letter-spacing:3px;margin-top:6px}
+    .products{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+    .card{background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 5px 20px #0001;text-align:center;padding-bottom:18px}
+    .pack{height:220px;display:grid;place-items:center;font-weight:900;font-size:25px;color:#fff;background:linear-gradient(145deg,#e7c47a,#70400d)}
+    .card:nth-child(2) .pack{background:linear-gradient(145deg,#245b3c,#102b1d)}
+    .card:nth-child(3) .pack{background:linear-gradient(145deg,#f1d98e,#9b641d)}
+    .card:nth-child(4) .pack{background:linear-gradient(145deg,#593015,#201108)}
+    .card:nth-child(5) .pack{background:linear-gradient(145deg,#82bf58,#1b6335)}
+    .card h3{font-size:17px;margin:14px 8px 4px}.card p{font:13px Arial;color:#666}.card .btn{margin-top:13px;padding:9px 18px;font-size:12px}
+    .story{display:grid;grid-template-columns:1fr 1fr;background:var(--deep);color:#fff}
+    .story > div{padding:55px}.story h2{font-size:43px;margin-bottom:15px}.story p{font:16px Arial;color:#e8efe9}
+    .benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center;background:#fff}
+    .benefit{padding:20px}.benefit strong{display:block;font-size:18px;margin-top:10px}.benefit span{font:13px Arial;color:#666}
+    .newsletter{background:#e5c77f url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=70") center/cover;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .newsletter h2{font-size:34px}.newsletter form{display:flex;background:#fff;border-radius:30px;overflow:hidden}.newsletter input{border:0;padding:15px 20px;min-width:280px;outline:0}.newsletter button{border:0;background:var(--brown);color:#fff;padding:0 22px}
+    footer{background:var(--brown);color:#fff;padding:45px 6% 20px;font:14px Arial}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:35px}.footer-grid h3{margin-bottom:15px;color:#e6bf68}.footer-grid a{display:block;margin:7px 0;color:#eee}.copy{text-align:center;border-top:1px solid #ffffff33;margin-top:30px;padding-top:15px;color:#ddd}
+    @media(max-width:900px){nav{display:none}.products{grid-template-columns:repeat(2,1fr)}.story{grid-template-columns:1fr}.benefits{grid-template-columns:repeat(2,1fr)}.newsletter{display:block}.newsletter form{margin-top:20px;width:100%}}
+    @media(max-width:600px){.hero{padding:50px 6%}.hero h1{font-size:50px}.products{grid-template-columns:1fr}.story > div{padding:35px 6%}.footer-grid{grid-template-columns:1fr 1fr}.newsletter input{min-width:0;width:100%}}
+  </style>
+</head>
+<body>
+  <div class="top"><span>Pure Taste &nbsp;|&nbsp; Healthy Lifestyle &nbsp;|&nbsp; A Stronger Tomorrow</span><span>English &nbsp;|&nbsp; हिन्दी</span></div>
+
+  <header>
+    <a class="logo" href="#"><small>THE</small><b>TITANIUM</b><span>TEA</span></a>
+    <nav>
+      <a href="#home">Home</a><a href="#about">About Us</a><a href="#products">Our Products</a>
+      <a href="#benefits">Health Benefits</a><a href="#story">Our Story</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="#products">Shop Now 🛒</a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>More Than Tea<br>A Better You...</h1>
+        <h2>THE TITANIUM TEA</h2>
+        <div class="icons">
+          <div class="icon"><i>🍃</i>Natural<br>Ingredients</div>
+          <div class="icon"><i>♥</i>Good<br>For Health</div>
+          <div class="icon"><i>⚡</i>Boosts<br>Energy</div>
+          <div class="icon"><i>☕</i>Rich<br>Taste</div>
+        </div>
+        <a class="btn" href="#products">Explore Our Products →</a>
+      </div>
+    </section>
+
+    <div class="strip"><span>🍃 100% Natural</span><span>🍃 No Added Preservatives</span><span>⚗ Premium Quality</span><span>🚚 Pan India Delivery</span></div>
+
+    <section id="products">
+      <h2 class="title">Our Popular Products <small>Traditional Taste &nbsp;|&nbsp; Modern Convenience</small></h2>
+      <div class="products">
+        <article class="card"><div class="pack">THE<br>TITANIUM<br>TEA</div><h3>Jaggery Tea Premix</h3><p>Our Signature Blend</p><a class="btn" href="#">View Details</a></article>
+        <article class="card"><div class="pack">THE<br>TITANIUM<br>TEA</div><h3>Masala Tea Premix</h3><p>Spices for Extra Goodness</p><a class="btn" href="#">View Details</a></article>
+        <article class="card"><div class="pack">THE<br>TITANIUM<br>TEA</div><h3>Elaichi Tea Premix</h3><p>Royal Elaichi Flavour</p><a class="btn" href="#">View Details</a></article>
+        <article class="card"><div class="pack">THE<br>TITANIUM<br>TEA</div><h3>Plain Tea Premix</h3><p>Perfect Everyday Tea</p><a class="btn" href="#">View Details</a></article>
+        <article class="card"><div class="pack">THE<br>TITANIUM<br>TEA</div><h3>Lemon Tea Premix</h3><p>Fresh & Refreshing</p><a class="btn" href="#">View Details</a></article>
+      </div>
+    </section>
+
+    <section id="about" class="story">
+      <div><h2>From Nature<br>To Your Cup</h2><p>At The Titanium Tea, we believe tea is more than a drink; it is a feeling. Our premix is crafted with high-quality ingredients, bringing you the perfect balance of taste, tradition and convenience.</p></div>
+      <div><h2>Good Tea.<br>Good Mood.</h2><p>Traditional taste in every sip, with a modern premix experience designed for everyday tea lovers.</p></div>
+    </section>
+
+    <section id="benefits" class="benefits">
+      <div class="benefit">🍃<strong>Premium Quality Ingredients</strong><span>Carefully selected ingredients</span></div>
+      <div class="benefit">👥<strong>Happy Customers</strong><span>Made for everyday tea lovers</span></div>
+      <div class="benefit">★<strong>Rich Taste & Aroma</strong><span>A memorable cup every time</span></div>
+      <div class="benefit">🌿<strong>A Healthier You</strong><span>Balanced everyday tea experience</span></div>
+    </section>
+
+    <section class="newsletter">
+      <div><h2>Join Our Tea Journey</h2><p>Be a Part of a Healthier, Happier Tomorrow.</p></div>
+      <form><input type="email" placeholder="Enter your email address"><button>➤</button></form>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-grid">
+      <div><div class="logo"><small>THE</small><b>TITANIUM</b><span>TEA</span></div><p style="margin-top:18px">Desi Swad, Healthy Zindagi...</p></div>
+      <div><h3>Quick Links</h3><a href="#home">Home</a><a href="#about">About Us</a><a href="#products">Our Products</a><a href="#benefits">Health Benefits</a></div>
+      <div><h3>Customer Support</h3><a href="#">FAQ</a><a href="#">Shipping Policy</a><a href="#">Return Policy</a><a href="#">Privacy Policy</a></div>
+      <div><h3>Contact Us</h3><p>Katihar, Bihar, India</p><p><a href="tel:+919296999303">+91 92969 99303</a></p><p><a href="https://wa.me/919296999303" target="_blank" rel="noopener">WhatsApp: +91 92969 99303</a></p><p>support@thetitaniumtea.com</p></div>
+    </div>
+    <div class="copy">© 2026 The Titanium Tea. All Rights Reserved.</div>
+  </footer>
+</body>
+</html>
